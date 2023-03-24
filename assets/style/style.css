@@ -102,6 +102,7 @@ nav {
 nav > ul{
     color: var(--white);
     list-style: none;
+    padding: 0;
 }
 nav > ul > a{
     text-decoration: none;
