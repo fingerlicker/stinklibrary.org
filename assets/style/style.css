@@ -1,27 +1,27 @@
 /* Media Scaling */
 @media(min-width:2001px){
     :root{
-        font-size: 11px;
+        font-size: 13px;
     }
 }
 @media(max-width: 2000px){
     :root{
-        font-size: 9px;
+        font-size: 11px;
     }
 }
 @media(max-width: 900px){
     :root{
-        font-size: 7px;
+        font-size: 9px;
     }
 }
 @media(max-width: 600px){
     :root{
-        font-size: 3.5px;
+        font-size: 5px;
     }
 }
 @media(max-width: 350px){
     :root{
-        font-size: 3px;
+        font-size: 4px;
     }
 }
 
