@@ -48,33 +48,18 @@ body{
     padding: 0;
     background-color: var(--lightgreen);
 }
-
-/* Title Bar */
-header{
-    background-color: var(--brown);
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header > h1 {
-    margin: 0px;
-    font-size: 5rem;
-    display: inline-block;
-    animation: slidedown 2.5s forwards;
-}
-header > img{
-    width: 10rem;
-}
-#stinkleaf1{
-    animation: slideleft 2.5s forwards;
-}
-#stinkleaf2{
-    animation: slideright 2.5s forwards;
-}
+/* Animations Declarations */
 @keyframes slidedown{
     0% {
       transform: translateY(-40rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+@keyframes slideup{
+    0% {
+      transform: translateY(+40rem);
     }
     100% {
       transform: translateY(0);
@@ -87,7 +72,7 @@ header > img{
     100% {
       transform: translateX(0);
     }
-  }
+}
 @keyframes slideright{
     0% {
       transform: translateX(+150rem);
@@ -95,7 +80,32 @@ header > img{
     100% {
       transform: translateX(0);
     }
-  }
+}
+
+/* Title Bar */
+header{
+    background-color: var(--brown);
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slidedown 1s forwards;
+}
+header > h1 {
+    margin: 0px;
+    font-size: 5rem;
+    display: inline-block;
+    animation: slidedown 1.5s forwards;
+}
+header > img{
+    width: 10rem;
+}
+#stinkleaf1{
+    animation: slideleft 1.5s forwards;
+}
+#stinkleaf2{
+    animation: slideright 1.5s forwards;
+}
 
 /* Navigation Menu */
 nav {
@@ -127,7 +137,12 @@ nav > ul > a > li:hover{
     font-size: 5rem;
     padding: 3rem;
 }
-
+#li1{
+    animation: slideleft 1.5s forwards;
+}
+#li2{
+    animation: slideright 1.5s forwards;
+}
 /* Footer */
 footer{
     background-color: var(--brown);
@@ -137,6 +152,7 @@ footer{
     display: block;
     width: 100%;
     padding: 1rem;
+    animation: slideup 1s forwards;
 }
 footer > *{
     margin: .5rem;
