@@ -37,7 +37,7 @@
     --white:#f5f5f5;
     --lightgrey:#C0C0C0;
     --lightblue:#ADD8E6;
-    --lightgreen:#60B36D;
+    --lightgreen:#23B14D;
     --darkgreen:#26412A;
     color:var(--white);
 }
@@ -104,6 +104,10 @@ header > img{
     animation: slideleft 1.5s forwards;
 }
 #stinkleaf2{
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
     animation: slideright 1.5s forwards;
 }
 
