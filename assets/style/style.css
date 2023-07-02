@@ -47,11 +47,11 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(../../assets/images/stinkincin.jpg);
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
-}
+    display: flex;
+    flex-direction: column;    
+    height: 100vh;
+    }
+
 /* Animations Declarations */
 @keyframes slidedown{
     0% {
@@ -85,7 +85,6 @@ body{
       transform: translateX(0);
     }
 }
-
 /* Title Bar */
 header{
     background-color: var(--prettyblue);
@@ -95,8 +94,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: slidedown 1s forwards;
+    /* animation: slidedown 1s forwards; */
     outline: 5px solid green;
+    flex: 2;
 }
 header > h1 {
     margin: 0px;
@@ -117,7 +117,13 @@ header > img{
     transform: scale(-1, -1);
     animation: slideright 1.5s forwards;
 }
-
+/* Middle of the page */
+#middle{
+    background-image: url(../../assets/images/stinkincin2.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    flex: 10;
+}
 /* Navigation Menu */
 nav {
     margin: 4rem auto;
@@ -158,14 +164,13 @@ nav > ul > a > li:hover{
 /* Footer */
 footer{
     background-color: var(--prettyblue);
-    bottom: 0;
-    position: fixed;
     text-align: center;
     display: block;
-    width: 100%;
     padding: 1rem;
-    animation: slideup 1s forwards;
+    justify-content: center;
+    /* animation: slideup 1s forwards; */
     outline: 5px solid green;
+    flex: 1;
 }
 footer > *{
     margin: .5rem;
