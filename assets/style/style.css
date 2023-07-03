@@ -95,7 +95,7 @@ header{
     justify-content: center;
     align-items: center;
     /* animation: slidedown 1s forwards; */
-    outline: 5px solid green;
+    border: 5px solid green;
     flex: 2;
 }
 header > h1 {
@@ -148,7 +148,7 @@ nav > ul > a > li{
     text-align: center;
     font-size: 3rem;
     transition: .4s;
-    outline: 5px solid green;
+    border: 5px solid green;
 }
 nav > ul > a > li:hover{
     color: var(--lightblue);
@@ -169,7 +169,7 @@ footer{
     padding: 1rem;
     justify-content: center;
     /* animation: slideup 1s forwards; */
-    outline: 5px solid green;
+    border: 5px solid green;
     flex: 1;
 }
 footer > *{
