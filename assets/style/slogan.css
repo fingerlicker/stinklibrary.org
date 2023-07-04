@@ -130,10 +130,9 @@ header > img{
 
 /* Navigation Menu */
 nav {
-    margin: 4rem auto;
-    border-radius: 3rem;
-    width: 40rem;
-    padding: 2rem;
+    display: block;
+    text-align: center;
+    padding-top: 5rem;
 }
 nav > ul{
     color: var(--white);
@@ -143,27 +142,12 @@ nav > ul{
 nav > ul > a{
     text-decoration: none;
 }
-nav > ul > a > li{
-    margin: 2rem;
-    color: var(--white);
-    background-color: var(--prettyblue);
-    padding: 2rem;
-    border-radius: 1rem;
-    text-align: center;
-    font-size: 3rem;
-    transition: .4s;
-    border: 5px solid green;
+nav > ul > li{
+    padding-bottom: 2rem;
 }
-nav > ul > a > li:hover{
-    color: var(--lightblue);
-    font-size: 5rem;
-    padding: 3rem;
-}
-#li1{
+#sloganpic{
     animation: slideleft 1.5s forwards;
-}
-#li2{
-    animation: slideright 1.5s forwards;
+    border: 5px solid green;
 }
 
 /* Footer */
