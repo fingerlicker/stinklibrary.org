@@ -92,7 +92,7 @@ header{
     background-color: var(--prettyblue);
     background-repeat: no-repeat;
     background-size:cover;
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,13 +110,11 @@ header > img{
     width: 10rem;
 }
 #stinkleaf1{
+    padding-right: 3rem;
     animation: slideleft 1.5s forwards;
 }
 #stinkleaf2{
-    -moz-transform: scale(-1, -1);
-    -o-transform: scale(-1, -1);
-    -webkit-transform: scale(-1, -1);
-    transform: scale(-1, -1);
+    padding-left: 3rem;
     animation: slideright 1.5s forwards;
 }
 

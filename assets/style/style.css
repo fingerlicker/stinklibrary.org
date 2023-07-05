@@ -92,7 +92,7 @@ header{
     background-color: var(--prettyblue);
     background-repeat: no-repeat;
     background-size:cover;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
