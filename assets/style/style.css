@@ -27,13 +27,13 @@
 
 /* Font Declarations */
 @font-face {
-    font-family: lilita;
-    src: url(../../assets/fonts/LilitaOne-Regular.ttf);
+    font-family: "OxaniumRegular";
+    src: url(../../assets/fonts/Oxanium-Regular.ttf);
 }
 
 /* Default parameters/root */
 :root{
-    font-family: lilita,sans-serif;
+    font-family: 'OxaniumRegular';
     --brown:#3d2d00;
     --white:#f5f5f5;
     --lightgrey:#C0C0C0;
@@ -92,7 +92,7 @@ header{
     background-color: var(--prettyblue);
     background-repeat: no-repeat;
     background-size:cover;
-    padding: 3rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,13 +111,11 @@ header > img{
 }
 #stinkleaf1{
     animation: slideleft 1.5s forwards;
+    padding-right: 3rem;
 }
 #stinkleaf2{
-    -moz-transform: scale(-1, -1);
-    -o-transform: scale(-1, -1);
-    -webkit-transform: scale(-1, -1);
-    transform: scale(-1, -1);
     animation: slideright 1.5s forwards;
+    padding-left: 3rem;
 }
 
 /* Middle of the page */
