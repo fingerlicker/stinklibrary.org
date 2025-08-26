@@ -1,39 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/leafhehe.png">
-    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-    <title>Stink Library</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stink Library</title>
+  <style>
+    :root {
+      --accent: #2ecc71;
+      --accent-hover: #27ae60;
+      --bg-top: #1a1a1d;     /* lighter top */
+      --bg-bottom: #0f0f12;  /* lighter bottom */
+      --card-bg: #111;       /* card stays deep black */
+      --text: #f8f9fb;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: system-ui, sans-serif;
+      background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+      color: var(--text);
+      text-align: center;
+    }
+
+    .content-box {
+      margin-top: 3rem;
+      padding: 2rem;
+      border-radius: 16px;
+      background: url('background.jpg') center/cover no-repeat, var(--card-bg);
+      max-width: 500px;
+      width: 90%;
+      min-height: 60vh;        /* gives the box more presence */
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 32px -12px #000a;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 4rem);
+      margin: 0 0 2rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 2rem 0;
+      align-items: center;
+    }
+
+    a.button {
+      display: block;
+      width: 200px;       /* consistent button width */
+      max-width: 80%;
+      padding: 0.8rem 1.6rem;
+      border-radius: 12px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    a.button:hover {
+      transform: translateY(-2px) scale(1.05);
+      background: var(--accent-hover);
+      box-shadow: 0 0 12px var(--accent), 0 8px 20px -6px #000a;
+    }
+
+    .tagline {
+      margin-top: auto;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: #ccc;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <img id="stinkleaf1" src="assets/images/leafredo1.png">
-        <h1>Stink Library</h1>
-        <img id="stinkleaf2" src="assets/images/leafredo2.png">
-    </header>
-    <div id="middle">
-        <nav>
-            <ul>
-                <a href="https://comics.stinklibrary.org">
-                    <li id="li1">Comics</li>
-                </a>
-                <a href="https://books.stinklibrary.org">
-                    <li id="li2">Books</li>
-                </a>
-            </ul>
-        </nav>
+  <div class="content-box">
+    <h1>Stink Library</h1>
+    <div class="buttons">
+      <a href="https://comics.stinklibrary.org" class="button">Comics</a>
+      <a href="https://books.stinklibrary.org" class="button">Books</a>
     </div>
-    <footer>
-        <a id="sloganlink" href="slogan.html">
-            <h1>The stinkiest library</h1>
-            <h1>known to mankind</h1>
-        </a>
-    </footer>
+  </div>
+  <p class="tagline">The stinkiest library known to mankind</p>
 </body>
-
 </html>
