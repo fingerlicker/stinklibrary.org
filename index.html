@@ -113,10 +113,11 @@
     }
 
     a.button:hover {
-      transform: translateY(-1px);
-      color: #fff;
+      background: rgba(var(--accent-rgb), 0.1);     /* light transparent tint */
       border-color: rgba(var(--accent-rgb), 0.8);
-      background: linear-gradient(180deg, var(--accent-strong), var(--accent));
+      color: var(--accent);
+      box-shadow: 0 0 12px rgba(var(--accent-rgb), 0.5);
+      transform: translateY(-1px);
     }
 
     a.button:active {
