@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --accent: #2ecc71;
-      --accent-hover: #27ae60;
+      --accent: #06b6d4;   /* aqua */
+      --accent-hover: #0891b2;
       --bg-top: #1a1a1d;     /* lighter top */
       --bg-bottom: #0f0f12;  /* lighter bottom */
       --card-bg: #111;       /* card stays deep black */
@@ -31,6 +31,8 @@
   }
 
     .content-box {
+      order: 1px solid var(--accent);
+      box-shadow: 0 0 12px rgba( var(--accent-rgb), 0.25 ); /* optional soft glow */
       margin-top: 3rem;
       padding: 2rem;
       border-radius: 16px;
